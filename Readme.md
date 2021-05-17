@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Екатерина Куса](https://up.htmlacademy.ru/htmlcss/31/user/1046223).
-* Наставник: `Неизвестно`.
+* Наставник: [Алексей Елькин](https://htmlacademy.ru/profile/alex_elkin).
 
 ---
 
