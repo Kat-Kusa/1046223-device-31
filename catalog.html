@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Девайс</title>
+</head>
+
+<body>
+  <header>
+    <a>
+      <img src="https://via.placeholder.com/163x35" alt="Логотип магазина гаджетов «Device»" width="163" height="35">
+    </a>
+    <div>
+      <div>
+        <form action="https://echo.htmlacademy.ru" method="post" name="search-form">
+          <label for="user-search" class="visually-hidden">Поиск по сайту</label>
+          <input type="text" id="user-search" name="search" placeholder="Поиск по сайту">
+          <button type="button">Найти</button>
+        </form>
+        <div>
+          <a>
+            <svg width="13" height="14"></svg>
+            Валентин Петухов
+          </a>
+          <button type="button">
+            Выйти
+          </button>
+        </div>
+        <button type="button">
+          <svg width="14" height="14"></svg>
+          Сравнить
+        </button>
+        <button type="button">
+          <svg width="10" height="10"></svg>
+          Корзина
+        </button>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">Каталог товаров</a>
+            <ul>
+              <li>
+                <a href="#">Виртуальная реальность</a>
+              </li>
+              <li>
+                <a href="catalog.html">Моноподы для селфи</a>
+              </li>
+              <li>
+                <a href="#">Экшн-камеры</a>
+              </li>
+              <li>
+                <a href="#">Фитнес-браслеты</a>
+              </li>
+              <li>
+                <a href="#">Умные часы</a>
+              </li>
+              <li>
+                <a href="#">Квадрокоптер</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Доставка</a>
+          </li>
+          <li>
+            <a href="#">Гарантия</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <h1>Моноподы для селфи</h1>
+    <ul>
+      <li>
+        <a href="index.html">Главная</a>
+      </li>
+      <li>
+        <a href="#">Каталог товаров</a>
+      </li>
+      <li>
+        Моноподы для селфи
+      </li>
+    </ul>
+    <div>
+      <section>
+        <h2>Фильтр:</h2>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <div>
+            <span>Стоимость</span>
+            <div>
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min" tabindex="0"></div>
+              <div class="range-toggle range-toggle-max" tabindex="0"></div>
+            </div>
+            <div>
+              <span>от 0</span>
+              <span>до 5000</span>
+            </div>
+          </div>
+          <div>
+            <span>Цвет</span>
+            <fieldset>
+              <label>
+                <input type="checkbox" name="color" value="black" checked>
+                <span>Черный</span>
+              </label>
+              <label>
+                <input type="checkbox" name="color" value="white">
+                <span>Белый</span>
+              </label>
+              <label>
+                <input type="checkbox" name="color" value="blue" checked>
+                <span>Синий</span>
+              </label>
+              <label>
+                <input type="checkbox" name="color" value="red" checked>
+                <span>Красный</span>
+              </label>
+              <label>
+                <input type="checkbox" name="color" value="pink">
+                <span>Розовый</span>
+              </label>
+            </fieldset>
+          </div>
+          <div>
+            <span>Bluetooth</span>
+            <fieldset>
+              <label>
+                <input type="radio" name="select-bluetooth" value="yes" checked>
+                <span>Есть</span>
+              </label>
+              <label>
+                <input type="radio" name="select-bluetooth" value="no">
+                <span>Нет</span>
+              </label>
+            </fieldset>
+          </div>
+          <button type="submit">
+            Показать
+          </button>
+        </form>
+      </section>
+      <div>
+        <section>
+          <h2>Сортировка:</h2>
+            <ul>
+              <li>
+                <button type="button">По цене</button>
+              </li>
+              <li>
+                <button type="button">По типу</button>
+              </li>
+              <li>
+                <button type="button">По популярности</button>
+              </li>
+            </ul>
+            <button type="button">
+              <span class="visually-hidden">Увеличение</span>
+            </button>
+            <button type="button">
+              <span class="visually-hidden">Уменьшение</span>
+            </button>
+        </section>
+        <section>
+          <h2 class="visually-hidden">Товары</h2>
+          <ul>
+            <li>
+              <div>
+                <img src="https://via.placeholder.com/360x380" alt="Любительская селфи-палка" width="360" height="380">
+                <svg width="62" height="62"></svg>
+                <div>
+                  <h3>
+                    <a href="#">
+                      Любительская селфи-палка
+                    </a>
+                  </h3>
+                  <span>1 100 руб.</span>
+                </div>
+              </div>
+              <div>
+                <button type="button">
+                  В корзину
+                </button>
+                <button type="button">
+                  Добавить к сравнению
+                </button>
+              </div>
+            </li>
+            <li>
+              <div>
+                <img src="https://via.placeholder.com/360x380" alt="Профессиональная селфи-палка" width="360" height="380">
+                <svg width="62" height="62"></svg>
+                <div>
+                  <h3>
+                    <a href="#">
+                      Профессиональная селфи-палка
+                    </a>
+                  </h3>
+                  <span>1 500 руб.</span>
+                </div>
+              </div>
+              <div>
+                <button type="button">
+                  В корзину
+                </button>
+                <button type="button">
+                  Добавить к сравнению
+                </button>
+              </div>
+            </li>
+            <li>
+              <div>
+                <img src="https://via.placeholder.com/360x380" alt="Непотопляемая селфи-палка" width="360" height="380">
+                <svg width="62" height="62"></svg>
+                <div>
+                  <h3>
+                    <a href="#">
+                      Непотопляемая селфи-палка
+                    </a>
+                  </h3>
+                  <span>1 500 руб.</span>
+                </div>
+              </div>
+              <div>
+                <button type="button">
+                  В корзину
+                </button>
+                <button type="button">
+                  Добавить к сравнению
+                </button>
+              </div>
+            </li>
+            <li>
+              <div>
+                <img src="https://via.placeholder.com/360x380" alt="Селфи-палка «Следуй за мной»" width="360" height="380">
+                <svg width="62" height="62"></svg>
+                <div>
+                  <h3>
+                    <a href="#">
+                      Селфи-палка «Следуй за мной»
+                    </a>
+                  </h3>
+                  <span>1 900 руб.</span>
+                </div>
+              </div>
+              <div>
+                <button type="button">
+                  В корзину
+                </button>
+                <button type="button">
+                  Добавить к сравнению
+                </button>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2 class="visually-hidden">Список страниц</h2>
+          <button type="button">
+            Назад
+          </button>
+          <ul>
+            <li>
+              <a href="#">1</a>
+            </li>
+            <li>
+              <a href="#">2</a>
+            </li>
+            <li>
+              <a href="#">3</a>
+            </li>
+          </ul>
+          <button type="button">
+            Вперед
+          </button>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div>
+      <a>
+        <img src="https://via.placeholder.com/163x35" alt="Логотип магазина гаджетов «Device»" width="163" height="35">
+      </a>
+      <ul>
+        <li>
+          <button type="button">
+            <svg width="13" height="14"></svg>
+            Войти
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <svg width="14" height="14"></svg>
+            Сравнить
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <svg width="10" height="10"></svg>
+            Корзина
+          </button>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <section>
+        <h2 class="visually-hidden">Как нас найти</h2>
+        <p>
+          Санкт-Петербург, набережная
+          реки Карповки, 5, литера П.
+        </p>
+      </section>
+      <section>
+        <h2 class="visually-hidden">Информация</h2>
+        <ul>
+          <li>
+            <a href="#">Доставка</a>
+          </li>
+          <li>
+            <a href="#">Гарантия</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </section>
+      <p>
+        Тел.: <a href="tel:+78005558628">+7 800 555-86-28</a>
+      </p>
+    </div>
+    <div>
+      <section>
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <ul>
+          <li>
+            <a href="#">
+              <span class="visually-hidden">Фейсбук</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="visually-hidden">Инстаграм</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="visually-hidden">Твиттер</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <a href="https://htmlacademy.ru">
+        <span class="visually-hidden">HTML Academy</span>
+      </a>
+    </div>
+  </footer>
+  <div>
+    <section>
+      <button type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="userfield-id">Ваше имя:</label>
+          <input type="text" id="userfield-id" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="userfield-mail">Ваш e-mail:</label>
+          <input type="email" id="userfield-mail" placeholder="email@example.com">
+        </p>
+        <p>Текст письма:
+          <textarea id="userfield-message" rows="5" placeholder="В свободной форме"
+            aria-label="Текст письма:"></textarea>
+        </p>
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
+  </div>
+</body>
+
+</html>

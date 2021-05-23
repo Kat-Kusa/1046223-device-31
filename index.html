@@ -1,42 +1,37 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
-  </head>
-  <body>
-    <header>
-      <a>
-        <img src="https://via.placeholder.com/163x35" alt="Логотип магазина гаджетов «Device»">
-      </a>
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Девайс</title>
+</head>
+
+<body>
+  <header>
+    <a>
+      <img src="https://via.placeholder.com/163x35" alt="Логотип магазина гаджетов «Device»" width="163" height="35">
+    </a>
+    <div>
+      <div>
+        <form action="https://echo.htmlacademy.ru" method="post" name="search-form">
+          <label for="user-search" class="visually-hidden">Поиск по сайту</label>
+          <input type="text" id="user-search" name="search" placeholder="Поиск по сайту">
+          <button type="button">Найти</button>
+        </form>
+        <button type="button">
+          <svg width="13" height="14"></svg>
+          Войти
+        </button>
+        <button type="button">
+          <svg width="14" height="14"></svg>
+          Сравнить
+        </button>
+        <button type="button">
+          <svg width="10" height="10"></svg>
+          Корзина
+        </button>
+      </div>
       <nav>
-        <ul>
-          <li>
-            <button>Поиск по сайту</button>
-            <form action="https://echo.htmlacademy.ru" method="post" name="search-form">
-              <label for="user-search" class="visually-hidden">Поиск по сайту</label>
-              <input type="text" id="user-search" name="search" placeholder="Поиск по сайту">
-            </form>
-          </li>
-          <li>
-            <button type="button">
-              <svg></svg>
-              Войти
-            </button>
-          </li>
-          <li>
-            <button type="button">
-              <svg></svg>
-              Сравнить
-            </button>
-          </li>
-          <li>
-            <button type="button">
-              <svg></svg>
-              Корзина
-            </button>
-          </li>
-        </ul>
         <ul>
           <li>
             <a href="#">Каталог товаров</a>
@@ -72,23 +67,22 @@
           </li>
         </ul>
       </nav>
-    </header>
-    <main>
-      <h1 class="visually-hidden">
-        Магазин гаджетов «Device»
-      </h1>
-      <section>
-        <h2 class="visually-hidden">Слайдер с товарами</h2>
-        <div>
-          <label for="product-1" class="visually-hidden">Первый</label>
-          <input type="radio" id="product-1" name="toggle">
-          <label for="product-2" class="visually-hidden">Второй</label>
-          <input type="radio" id="product-2" name="toggle">
-          <label for="product-3" class="visually-hidden">Третий</label>
-          <input type="radio" id="product-3" name="toggle" checked>
-        </div>
-        <div>
-          <img src="https://via.placeholder.com/384x486" alt="Квадрокоптер">
+    </div>
+  </header>
+  <main>
+    <h1 class="visually-hidden">
+      Магазин гаджетов «Device»
+    </h1>
+    <section>
+      <h2 class="visually-hidden">Слайдер с товарами</h2>
+      <div>
+        <button type="button"></button>
+        <button type="button"></button>
+        <button type="button"></button>
+      </div>
+      <div>
+        <section>
+          <img src="https://via.placeholder.com/384x486" alt="Квадрокоптер" width="384" height="486">
           <h3>
             Порхает как бабочка, жалит как пчела!
           </h3>
@@ -107,9 +101,9 @@
               <td>Радиус поражения</td>
             </tr>
           </table>
-        </div>
-        <div>
-          <img src="https://via.placeholder.com/345x485" alt="Фитнес-браслет">
+        </section>
+        <section>
+          <img src="https://via.placeholder.com/345x485" alt="Фитнес-браслет" width="345" height="485">
           <h3>
             Худеем правильно!
           </h3>
@@ -125,9 +119,9 @@
               <td>Без подзарядки</td>
             </tr>
           </table>
-        </div>
-        <div>
-          <img src="https://via.placeholder.com/384x486" alt="Монопод для селфи">
+        </section>
+        <section>
+          <img src="https://via.placeholder.com/384x486" alt="Монопод для селфи" width="384" height="486">
           <h3>
             Делай селфи, как Бен Стиллер!
           </h3>
@@ -148,185 +142,180 @@
               <td>Материал</td>
             </tr>
           </table>
-        </div>
-      </section>
-      <section>
-        <h2 class="visually-hidden">Каталог товаров</h2>
-        <ul>
-          <li>
-            <a href="#">
-              <svg></svg>
-              <p>Виртуальная реальность</p>
-            </a>
-          </li>
-          <li>
-            <a href="catalog.html">
-              <svg></svg>
-              <p>Моноподы для селфи</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <svg></svg>
-              <p>Экшн-камеры</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <svg></svg>
-              <p>Фитнес-браслеты</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <svg></svg>
-              <p>Умные часы</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <svg></svg>
-              <p>Квадрокоптеры</p>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <section>
-        <h2 class="visually-hidden">Информация</h2>
-        <ul>
-          <li>
-            <button type="button">Доставка</button>
-          </li>
-          <li>
-            <button type="button">Гарантия</button>
-          </li>
-          <li>
-            <button type="button">Кредит</button>
-          </li>
-        </ul>
-        <div>
-          <div>
-            <h2>
-              Доставка
-            </h2>
-            <p>
-              Мы с удовольствием доставим ваш товар прямо к вашему
-              подъезду совершенно бесплатно!
-              Ведь мы неплохо заработаем, поднимая его на ваш этаж.
-            </p>
-          </div>
-          <svg></svg>
-        </div>
-        <div>
-          <div>
-            <h2>
-              Гарантия
-            </h2>
-            <p>
-              Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте,
-              мы выдадим вам новый. Товар, не дом, конечно же.
-            </p>
-          </div>
-          <svg></svg>
-        </div>
-        <div>
-          <div>
-            <h2>
-              Кредит
-            </h2>
-            <p>
-              Залезть в долговую яму стало проще! Кредитные консультанты подберут
-              для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.
-            </p>
-          </div>
-          <svg></svg>
-        </div>
-      </section>
-      <section>
-        <h2 class="visually-hidden">Производители</h2>
-        <ul>
-          <li>
-            <img src="https://via.placeholder.com/260x100" alt="Логотип DJI">
-          </li>
-          <li>
-            <img src="https://via.placeholder.com/260x100" alt="Логотип SP Gadgets">
-          </li>
-          <li>
-            <img src="https://via.placeholder.com/260x100" alt="Логотип Go pro">
-          </li>
-          <li>
-            <img src="https://via.placeholder.com/260x100" alt="Логотип VIVE">
-          </li>
-        </ul>
-      </section>
-      <div>
-        <section>
-          <h2>О нас</h2>
-          <p>
-            Огромный выбор гаджетов не оставит равнодушным гика,
-            который есть в каждом из нас.
-          </p>
-          <p>
-            Мы можем доставить ваш товар в самые отдаленные точки
-            России! DEVICE работает со многими транспортными компаниями:
-          </p>
-          <ul>
-            <li>Деловые линии</li>
-            <li>Автотрейдинг</li>
-            <li>ЖелДорЭкспедиция</li>
-          </ul>
-          <button>подробнее о нас</button>
-        </section>
-        <section>
-          <h2>Контакты</h2>
-          <p>
-            Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
-            проверить работоспособность покупки. Всякое бывает.
-          </p>
-          <div>
-            <h3 class="visually-hidden">Карта</h3>
-            <img src="https://via.placeholder.com/560x222" alt="Карта">
-          </div>
-          <button>напишите нам</button>
         </section>
       </div>
-    </main>
-    <footer>
-     <div>
+    </section>
+    <section>
+      <h2 class="visually-hidden">Каталог товаров</h2>
+      <ul>
+        <li>
+          <a href="#">
+            <svg></svg>
+            <p>Виртуальная реальность</p>
+          </a>
+        </li>
+        <li>
+          <a href="catalog.html">
+            <svg></svg>
+            <p>Моноподы для селфи</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg></svg>
+            <p>Экшн-камеры</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg></svg>
+            <p>Фитнес-браслеты</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg></svg>
+            <p>Умные часы</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg></svg>
+            <p>Квадрокоптеры</p>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2 class="visually-hidden">Информация</h2>
+      <ul>
+        <li>
+          <button type="button">Доставка</button>
+        </li>
+        <li>
+          <button type="button">Гарантия</button>
+        </li>
+        <li>
+          <button type="button">Кредит</button>
+        </li>
+      </ul>
+      <section>
+        <h2>
+          Доставка
+        </h2>
+        <p>
+          Мы с удовольствием доставим ваш товар прямо к вашему
+          подъезду совершенно бесплатно!
+          Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+        </p>
+        <svg></svg>
+      </section>
+      <section>
+        <h2>
+          Гарантия
+        </h2>
+        <p>
+          Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте,
+          мы выдадим вам новый. Товар, не дом, конечно же.
+        </p>
+        <svg></svg>
+      </section>
+      <section>
+        <h2>
+          Кредит
+        </h2>
+        <p>
+          Залезть в долговую яму стало проще! Кредитные консультанты подберут
+          для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.
+        </p>
+        <svg></svg>
+      </section>
+    </section>
+    <section>
+      <h2 class="visually-hidden">Производители</h2>
+      <ul>
+        <li>
+          <img src="https://via.placeholder.com/260x100" alt="Логотип DJI" width="260" height="100">
+        </li>
+        <li>
+          <img src="https://via.placeholder.com/260x100" alt="Логотип SP Gadgets" width="260" height="100">
+        </li>
+        <li>
+          <img src="https://via.placeholder.com/260x100" alt="Логотип Go pro" width="260" height="100">
+        </li>
+        <li>
+          <img src="https://via.placeholder.com/260x100" alt="Логотип VIVE" width="260" height="100">
+        </li>
+      </ul>
+    </section>
+    <div>
+      <section>
+        <h2>О нас</h2>
+        <p>
+          Огромный выбор гаджетов не оставит равнодушным гика,
+          который есть в каждом из нас.
+        </p>
+        <p>
+          Мы можем доставить ваш товар в самые отдаленные точки
+          России! DEVICE работает со многими транспортными компаниями:
+        </p>
+        <ul>
+          <li>Деловые линии</li>
+          <li>Автотрейдинг</li>
+          <li>ЖелДорЭкспедиция</li>
+        </ul>
+        <button>подробнее о нас</button>
+      </section>
+      <section>
+        <h2>Контакты</h2>
+        <p>
+          Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
+          проверить работоспособность покупки. Всякое бывает.
+        </p>
+        <div>
+          <h3 class="visually-hidden">Карта</h3>
+          <img src="https://via.placeholder.com/560x222" alt="Карта" width="560" height="222">
+        </div>
+        <button>напишите нам</button>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div>
       <a>
-        <img src="https://via.placeholder.com/163x35" alt="Логотип магазина гаджетов «Device»">
+        <img src="https://via.placeholder.com/163x35" alt="Логотип магазина гаджетов «Device»" width="163" height="35">
       </a>
       <ul>
         <li>
           <button type="button">
-            <svg></svg>
+            <svg width="13" height="14"></svg>
             Войти
           </button>
         </li>
         <li>
           <button type="button">
-            <svg></svg>
+            <svg width="14" height="14"></svg>
             Сравнить
           </button>
         </li>
         <li>
           <button type="button">
-            <svg></svg>
+            <svg width="10" height="10"></svg>
             Корзина
           </button>
         </li>
       </ul>
-     </div>
-     <div>
-       <section>
-         <h2 class="visually-hidden">Как нас найти</h2>
-         <p>
+    </div>
+    <div>
+      <section>
+        <h2 class="visually-hidden">Как нас найти</h2>
+        <p>
           Санкт-Петербург, набережная
           реки Карповки, 5, литера П.
-         </p>
-       </section>
-       <section>
-         <h2 class="visually-hidden">Информация</h2>
+        </p>
+      </section>
+      <section>
+        <h2 class="visually-hidden">Информация</h2>
         <ul>
           <li>
             <a href="#">Доставка</a>
@@ -338,12 +327,12 @@
             <a href="#">Контакты</a>
           </li>
         </ul>
-       </section>
-       <p>
+      </section>
+      <p>
         Тел.: <a href="tel:+78005558628">+7 800 555-86-28</a>
-       </p>
-     </div>
-     <div>
+      </p>
+    </div>
+    <div>
       <section>
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul>
@@ -367,29 +356,31 @@
       <a href="https://htmlacademy.ru">
         <span class="visually-hidden">HTML Academy</span>
       </a>
-     </div>
-    </footer>
-    <div>
-      <section>
-        <button type="button">
-          <span class="visually-hidden">Закрыть</span>
-        </button>
-        <h2 class="visually-hidden">Форма обратной связи</h2>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <p>
-            <label for="userfield-id">Ваше имя:</label>
-            <input type="text" id="userfield-id" placeholder="Имя Фамилия">
-          </p>
-          <p>
-            <label for="userfield-mail">Ваш e-mail:</label>
-            <input type="email" id="userfield-mail" placeholder="email@example.com">
-          </p>
-          <p>Текст письма:
-           <textarea id="userfield-message" rows="5" placeholder="В свободной форме" aria-label="Текст письма:"></textarea>
-          </p>
-          <button type="submit">Отправить</button>
-        </form>
-      </section>
     </div>
-  </body>
+  </footer>
+  <div>
+    <section>
+      <button type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="userfield-id">Ваше имя:</label>
+          <input type="text" id="userfield-id" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="userfield-mail">Ваш e-mail:</label>
+          <input type="email" id="userfield-mail" placeholder="email@example.com">
+        </p>
+        <p>Текст письма:
+          <textarea id="userfield-message" rows="5" placeholder="В свободной форме"
+            aria-label="Текст письма:"></textarea>
+        </p>
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
+  </div>
+</body>
+
 </html>
