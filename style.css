@@ -24,28 +24,28 @@
   font-weight: 300;
   font-family: "Gilroy";
   font-display: swap;
-  src: url("/fonts/gilroylight.woff2") format("woff2"), url("/fonts/gilroylight.woff") format("woff");
+  src: url("./fonts/gilroylight.woff2") format("woff2"), url("./fonts/gilroylight.woff") format("woff");
 }
 @font-face {
   font-style: normal;
   font-weight: 800;
   font-family: "Gilroy";
   font-display: swap;
-  src: url("/fonts/gilroyextrabold.woff2") format("woff2"), url("/fonts/gilroyextrabold.woff") format("woff");
+  src: url("./fonts/gilroyextrabold.woff2") format("woff2"), url("./fonts/gilroyextrabold.woff") format("woff");
 }
 @font-face {
   font-style: normal;
   font-weight: 300;
   font-family: "Open Sans";
   font-display: swap;
-  src: url("/fonts/opensanslight.woff2") format("woff2"), url("/fonts/opensanslight.woff") format("woff");
+  src: url("./fonts/opensanslight.woff2") format("woff2"), url("./fonts/opensanslight.woff") format("woff");
 }
 @font-face {
   font-style: normal;
   font-weight: 400;
   font-family: "Open Sans";
   font-display: swap;
-  src: url("/fonts/opensans.woff2") format("woff2"), url("/fonts/opensans.woff") format("woff");
+  src: url("./fonts/opensans.woff2") format("woff2"), url("./fonts/opensans.woff") format("woff");
 }
 
 /* Global */
@@ -149,7 +149,7 @@ img {
 .main-navigation__form::before {
   content: '';
   position: absolute;
-  background-image: url(/img/icon_search.svg);
+  background-image: url(./img/icon_search.svg);
   width: 16px;
   height: 16px;
 }
@@ -191,17 +191,17 @@ img {
 .main-navigation__button--enter::before {
   width: 13px;
   height: 14px;
-  background-image: url("/img/user-black.svg");
+  background-image: url("./img/user-black.svg");
 }
 .main-navigation__button--compare::before {
   width: 14px;
   height: 14px;
-  background-image: url("/img/chart-black.svg");
+  background-image: url("./img/chart-black.svg");
 }
 .main-navigation__button--basket::before {
   width: 10px;
   height: 10px;
-  background-image: url("/img/cart-black.svg");
+  background-image: url("./img/cart-black.svg");
 }
 .main-navigation__button:hover::before,
 .main-navigation__button:focus::before {
@@ -216,6 +216,7 @@ img {
   list-style: none;
 }
 .site-navigation__link {
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 22px;
   font-weight: 800;
@@ -320,22 +321,22 @@ img {
 .producers__img--dji:hover,
 .producers__img--dji:focus,
 .producers__img--dji:active {
-  background-image: url(/img/logo-dji-color.png);
+  background-image: url(./img/logo-dji-color.png);
 }
 .producers__img--sp:hover,
 .producers__img--sp:focus,
 .producers__img--sp:active {
-  background-image: url(/img/logo-sp-color.png);
+  background-image: url(./img/logo-sp-color.png);
 }
 .producers__img--gopro:hover,
 .producers__img--gopro:focus,
 .producers__img--gopro:active {
-  background-image: url(/img/logo-gopro-color.png);
+  background-image: url(./img/logo-gopro-color.png);
 }
 .producers__img--vive:hover,
 .producers__img--vive:focus,
 .producers__img--vive:active {
-  background-image: url(/img/logo-vive-color.png);
+  background-image: url(./img/logo-vive-color.png);
 }
 .page-main__container {
   display: flex;
@@ -401,17 +402,17 @@ img {
 .footer-navigation__button--enter::before {
   width: 13px;
   height: 14px;
-  background-image: url("/img/icon_user.svg");
+  background-image: url("./img/icon_user.svg");
 }
 .footer-navigation__button--compare::before {
   width: 14px;
   height: 14px;
-  background-image: url("/img/icon_chart.svg");
+  background-image: url("./img/icon_chart.svg");
 }
 .footer-navigation__button--basket::before {
   width: 10px;
   height: 10px;
-  background-image: url("/img/icon_cart.svg");
+  background-image: url("./img/icon_cart.svg");
 }
 .footer-navigation__button:hover::before,
 .footer-navigation__button:focus::before {
@@ -477,13 +478,13 @@ img {
   opacity: 0.1;
 }
 .social__link--fb {
-  background-image: url(/img/icon_facebook.svg);
+  background-image: url(./img/icon_facebook.svg);
 }
 .social__link--insta {
-  background-image: url(/img/icon_instagram.svg);
+  background-image: url(./img/icon_instagram.svg);
 }
 .social__link--twitter {
-  background-image: url(/img/icon_witter.svg);
+  background-image: url(./img/icon_witter.svg);
 }
 .social__link-html:hover,
 .social__link-html:focus {
