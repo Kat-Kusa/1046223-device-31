@@ -814,6 +814,14 @@ opacity: 0.6;
   line-height: 18px;
   letter-spacing: 1px;
   color: var(--basic-black);
+  opacity: 0.5;
+}
+.items__button-compare:hover,
+.items__button-compare:focus {
+opacity: 1;
+}
+.items__button-compare:active {
+opacity: 0.2;
 }
 .sorting__paginator {
   display: flex;
