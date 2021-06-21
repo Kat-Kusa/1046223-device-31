@@ -4,7 +4,6 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
-  <link href="normalize.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
   <link rel="icon" href="favicon-32.ico">
   <link rel="icon" href="img/favicon-32.svg" type="image/svg+xml">
@@ -43,26 +42,26 @@
         </div>
         <nav class="site-navigation">
           <ul class="site-navigation__list">
-            <li class="site-navigation__item">
-              <a class="site-navigation__link" href="#">Каталог товаров</a>
+            <li class="site-navigation__item site-navigation__item--catalog">
+              <a class="site-navigation__link site-navigation__link--catalog" href="#">Каталог товаров</a>
               <ul class="site-navigation__catalog catalog-menu">
                 <li class="catalog-menu__item">
                   <a class="catalog-menu__link" href="#">Виртуальная реальность</a>
                 </li>
                 <li class="catalog-menu__item">
-                  <a class="catalog-menu__link" href="#">Моноподы для селфи</a>
-                </li>
-                <li class="catalog-menu__item">
-                  <a class="catalog-menu__link" href="#">Экшн-камеры</a>
-                </li>
-                <li class="catalog-menu__item">
                   <a class="catalog-menu__link" href="#">Фитнес-браслеты</a>
+                </li>
+                <li class="catalog-menu__item">
+                  <a class="catalog-menu__link" href="#">Квадрокоптер</a>
+                </li>
+                <li class="catalog-menu__item">
+                  <a class="catalog-menu__link" href="./catalog.html">Моноподы для селфи</a>
                 </li>
                 <li class="catalog-menu__item">
                   <a class="catalog-menu__link" href="#">Умные часы</a>
                 </li>
                 <li class="catalog-menu__item">
-                  <a class="catalog-menu__link" href="#">Квадрокоптер</a>
+                  <a class="catalog-menu__link" href="#">Экшн-камеры</a>
                 </li>
               </ul>
             </li>
@@ -102,17 +101,23 @@
             <h2 class="filter__title title title--medium">Фильтр:</h2>
             <form class="filter__form" action="https://echo.htmlacademy.ru" method="post">
               <div class="filter__container">
-                <span class="filter__span-bold">Стоимость</span>
-                <div class="filter__inner">
-                  <div class="filter__scale">
-                    <div class="filter__bar"></div>
+                <span class="filter__span-bold filter__span-bold--range">Стоимость</span>
+                <div class="filter__range-controls">
+                  <div class="filter__inner">
+                    <div class="filter__scale">
+                      <div class="filter__bar"></div>
+                    </div>
+                    <div class="filter__range-toggle filter__range-toggle--min" tabindex="0"></div>
+                    <div class="filter__range-toggle filter__range-toggle--max" tabindex="0"></div>
                   </div>
-                  <div class="filter__range-toggle filter__range-toggle--min" tabindex="0"></div>
-                  <div class="filter__range-toggle filter__range-toggle--max" tabindex="0"></div>
-                </div>
-                <div>
-                  <span class="filter__span-light">от 0</span>
-                  <span class="filter__span-light">до 5000</span>
+                  <div class="filter__price">
+                    <label class="filter__label-price">
+                      от <input type="number" name="min-price" value="0">
+                    </label>
+                    <label class="filter__label-price">
+                      до <input type="number" name="max-price" value="5000">
+                    </label>
+                  </div>
                 </div>
               </div>
               <div class="filter__container">
@@ -339,7 +344,7 @@
             реки Карповки, 5, литера П.
           </p>
         </section>
-        <section class="footer-information__container">
+        <section class="footer-information__section">
           <h2 class="visually-hidden">Информация</h2>
           <ul class="footer-information__list">
             <li class="footer-information__item">
