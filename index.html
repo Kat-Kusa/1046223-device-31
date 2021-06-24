@@ -86,7 +86,7 @@
           <button class="slider-button__toggle slider-button__toggle--current" type="button" aria-label="Третий слайд"></button>
         </div>
         <div class="slider__inner slider-main">
-          <section class="slider-main__container slider-main__container--current-1">
+          <section class="slider-main__container">
             <img class="slider-main__img" src="img/slider-3.png" alt="Квадрокоптер" width="526" height="334">
             <div class="slider-main__inner">
               <h3 class="slider-main__title title title--bold">
@@ -109,7 +109,7 @@
               </table>
             </div>
           </section>
-          <section class="slider-main__container slider-main__container--current slider-main__container--current-2">
+          <section class="slider-main__container">
             <img class="slider-main__img slider-main__img--braslett" src="img/slider-2.png" alt="Фитнес-браслет" width="345" height="485">
             <div class="slider-main__inner">
               <h3 class="slider-main__title title title--bold">
@@ -129,7 +129,7 @@
               </table>
             </div>
           </section>
-          <section class="slider-main__container slider-main__container--current-3">
+          <section class="slider-main__container slider-main__container--current">
             <img class="slider-main__img" src="img/slider-1.png" alt="Монопод для селфи" width="384" height="486">
             <div class="slider-main__inner">
               <h3 class="slider-main__title title title--bold">
@@ -216,41 +216,41 @@
           <h2 class="visually-hidden">Информация</h2>
           <ul class="information__list">
             <li class="information__item">
-              <button class="information__button button button--bg-yellow" type="button"><span class="button__span">Доставка</span></button>
+              <button class="information__button information__button--current button button--bg-yellow" type="button"><span class="button__span button__span--information">Доставка</span></button>
             </li>
             <li class="information__item">
-              <button class="information__button button button--bg-yellow" type="button"><span class="button__span">Гарантия</span></button>
+              <button class="information__button button button--bg-yellow" type="button"><span class="button__span button__span--information">Гарантия</span></button>
             </li>
             <li class="information__item">
-              <button class="information__button button button--bg-yellow" type="button"><span class="button__span">Кредит</span></button>
+              <button class="information__button button button--bg-yellow" type="button"><span class="button__span button__span--information">Кредит</span></button>
             </li>
           </ul>
-          <section class="information__container">
+          <section class="information__container information__container--current information__container--delivery">
             <h2 class="information__title title title--bold">
               Доставка
             </h2>
             <p class="information__paragraph">
-              Мы с удовольствием доставим ваш товар прямо к вашему
+              Мы с удовольствием доставим ваш товар прямо к вашему<br>
               подъезду совершенно бесплатно!
-              Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+              Ведь мы неплохо <br> заработаем, поднимая его на ваш этаж.
             </p>
           </section>
-          <section class="information__container">
+          <section class="information__container information__container--guarantee">
             <h2 class="information__title title title--bold">
               Гарантия
             </h2>
             <p class="information__paragraph">
-              Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте,
-              мы выдадим вам новый. Товар, не дом, конечно же.
+              Если из-за возгорания купленного у нас товара у вас сгорит дом — <br>не переживайте,
+              мы выдадим вам новый.<br> Товар, не дом, конечно же.
             </p>
           </section>
-          <section class="information__container">
+          <section class="information__container information__container--credit">
             <h2 class="information__title title title--bold">
               Кредит
             </h2>
-            <p class="information__title">
-              Залезть в долговую яму стало проще! Кредитные консультанты подберут
-              для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.
+            <p class="information__paragraph">
+              Залезть в долговую яму стало проще! Кредитные консультанты <br>подберут
+              для вас наиболее выгодные <br> условия кредита. Выгодные для нашего банка, разумеется.
             </p>
           </section>
         </div>
@@ -391,23 +391,26 @@
         <span class="visually-hidden">Закрыть</span>
       </button>
       <h2 class="visually-hidden">Форма обратной связи</h2>
-      <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
-        <p class="modal__paragraph">
-          <label for="userfield-id">Ваше имя:</label>
-          <input class="modal__input" type="text" id="userfield-id" placeholder="Имя Фамилия">
-        </p>
-        <p class="modal__paragraph">
-          <label for="userfield-mail">Ваш e-mail:</label>
-          <input class="modal__input" type="email" id="userfield-mail" placeholder="email@example.com">
-        </p>
-        <p class="modal__paragraph">Текст письма:
-          <textarea class="modal__input" id="userfield-message" rows="5" placeholder="В свободной форме"
+      <form class="modal__form" action="https://echo.htmlacademy.ru" method="post" name="userfield-form">
+        <div class="modal__inner">
+          <p class="modal__paragraph">
+            <label for="userfield-id">Ваше имя:</label>
+            <input class="modal__input" type="text" name="username" id="userfield-id" placeholder="Имя Фамилия">
+          </p>
+          <p class="modal__paragraph">
+            <label for="userfield-mail">Ваш e-mail:</label>
+            <input class="modal__input" name="user-mail" type="email" id="userfield-mail" placeholder="email@example.com">
+          </p>
+        </div>
+        <p class="modal__paragraph modal__paragraph--textarea">Текст письма:
+          <textarea class="modal__input modal__input--textarea" name="user-message" id="userfield-message" rows="5" placeholder="В свободной форме"
             aria-label="Текст письма:"></textarea>
         </p>
         <button class="modal__submit-button button button--bg-yellow" type="submit">Отправить</button>
       </form>
     </section>
   </div>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
