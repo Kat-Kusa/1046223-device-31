@@ -260,20 +260,20 @@
     <div class="wrapper">
       <section class="page-main__producers producers">
         <h2 class="visually-hidden">Производители</h2>
-        <ul class="producers__list">
-          <li class="producers__item">
+        <div class="producers__container">
+          <a class="producers__link" href="#">
             <img class="producers__img producers__img--dji" src="img/logo-dji.png" alt="Логотип DJI" width="260" height="100">
-          </li>
-          <li class="producers__item">
+          </a>
+          <a class="producers__link" href="#">
             <img class="producers__img producers__img--sp" src="img/logo-sp.png" alt="Логотип SP Gadgets" width="260" height="100">
-          </li>
-          <li class="producers__item">
+          </a>
+          <a class="producers__link" href="#">
             <img class="producers__img producers__img--gopro" src="img/logo-gopro.png" alt="Логотип Go pro" width="260" height="100">
-          </li>
-          <li class="producers__item">
+          </a>
+          <a class="producers__link" href="#">
             <img class="producers__img producers__img--vive" src="img/logo-vive.png" alt="Логотип VIVE" width="260" height="100">
-          </li>
-        </ul>
+          </a>
+        </div>
       </section>
       <div class="page-main__container">
         <section class="page-main__description description">
@@ -299,11 +299,9 @@
             Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
             проверить работоспособность покупки. Всякое бывает.
           </p>
-          <div class="contacts__map">
-            <h3 class="visually-hidden">Карта</h3>
-            <iframe class="contacts__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8180266209306!2d30.31518695149336!3d59.96834198179811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696315bc4e8ce61%3A0x74d4f0cbfe1fd995!2z0L3QsNCxLiBQ0LXQutC4INCa0LDRgNC_0L7QstC60LgsIDUg0LrQvtGA0L_Rg9GBINCfLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTk3MDIy!5e0!3m2!1sru!2sru!4v1624999629290!5m2!1sru!2sru" width="560" height="222" style="border:0;" allowfullscreen=""></iframe>
+          <button class="contacts__map button" aria-label="Карта" type="button">
             <img class="contacts__img" src="img/map-1.png" alt="набережная реки Карповки 5 корпус П, Санкт-Петербург" width="560" height="222">
-          </div>
+          </button>
           <a class="contacts__button button button--bg-yellow" href="form.html"><span class="button__span">напишите нам</span></a>
         </section>
       </div>
@@ -389,8 +387,7 @@
   </footer>
   <div class="modal">
     <section class="modal__container">
-      <button class="modal__button button" type="button">
-        <span class="visually-hidden">Закрыть</span>
+      <button class="modal__button button" type="button" aria-label="Закрыть">
       </button>
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <form class="modal__form" action="https://echo.htmlacademy.ru" method="post" name="userfield-form">
@@ -414,9 +411,7 @@
   </div>
   <div class="modal-map">
     <section class="modal-map__container">
-      <button class="modal-map__button button" type="button">
-        <span class="visually-hidden">Закрыть</span>
-      </button>
+      <button class="modal-map__button button" type="button" aria-label="Закрыть"></button>
       <h2 class="visually-hidden">Карта</h2>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8180266209306!2d30.31518695149336!3d59.96834198179811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696315bc4e8ce61%3A0x74d4f0cbfe1fd995!2z0L3QsNCxLiBQ0LXQutC4INCa0LDRgNC_0L7QstC60LgsIDUg0LrQvtGA0L_Rg9GBINCfLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTk3MDIy!5e0!3m2!1sru!2sru!4v1624999629290!5m2!1sru!2sru" width="960" height="573" style="border:0;" allowfullscreen=""></iframe>
       <img class="modal-map__img" src="img/map-big.png" alt="набережная реки Карповки 5 корпус П, Санкт-Петербург" width="960" height="573">
