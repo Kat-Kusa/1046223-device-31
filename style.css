@@ -457,6 +457,9 @@ img {
   margin-bottom: 0px;
   margin-left: 85px;
 }
+.slider-main__img--monopod {
+  margin: -85px 127px 20px 55px;
+}
 .slider-main__inner {
   z-index: 2;
 }
@@ -471,7 +474,7 @@ img {
   font-family: "Open Sans", Arial, sans-serif;
   line-height: 20px;
   margin: 0;
-  margin-right: 100px;
+  margin-right: auto;
   margin-bottom: 58px;
 }
 .slider-main__tablet {
@@ -755,7 +758,8 @@ img {
   margin-bottom: 40px;
 }
 .contacts__map {
-  margin-bottom: 75px;
+  margin-bottom: 80px;
+  padding: 0;
   cursor: pointer;
 }
 .contacts__map:focus {
@@ -1372,7 +1376,7 @@ img {
   display: block;
   width: 13.54px;
   height: 10.5px;
-  background-image: url("./img/checked.svg");
+  background-image: url(./img/checked.svg);
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
@@ -1423,7 +1427,7 @@ img {
   align-self: center;
   margin: 0;
   padding: 0;
-  margin-right: 218px;
+  margin-right: auto;
 }
 .sorting__item:not(:last-child) {
   margin-right: 30px;
