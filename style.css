@@ -92,6 +92,7 @@ img {
 
 .button {
   display: inline-block;
+  vertical-align: inherit;
   cursor: pointer;
   border: transparent;
   font-family: inherit;
